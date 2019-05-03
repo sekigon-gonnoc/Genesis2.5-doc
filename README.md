@@ -1,5 +1,5 @@
-# Genesis2.5ビルドガイド
-
+# Genesis2.5ビルドガイド	
+質問は[discord](https://discordapp.com/invite/zXCss8T) または作者Twitter(@_gonnoc)まで
 ## 必要なもの
 - 時間
 - 折れない心
