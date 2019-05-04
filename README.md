@@ -58,3 +58,44 @@
 1. 干渉が発生しないことを確認出来たら、残りの部分もはんだ付けする
 1. 補強用行基板を各行に重ね、ネジを通してナットで止める
 1. 両サイドのスイッチを取り付ける
+
+## ファームウェア書き込み
+
+1. リポジトリを取得する
+  nrf52対応のqmk_firmwareは[こちら](https://github.com/sekigon-gonnoc/qmk_firmware/tree/nrf52)
+
+	- 既にqmk_firmwareを使っている場合
+	```
+        git remote add sekigon https://github.com/sekigon-gonnoc/qmk_firmware.git
+        git pull sekigon nrf52
+        git checkout nrf52
+	```
+	
+	 	　　　または
+	 
+		git clone  -b nrf52 https://github.com/sekigon-gonnoc/qmk_firmware.git ble_micro_pro
+	  
+	- 初めて使う場合
+
+        git clone --depth 1 -b nrf52 https://github.com/sekigon-gonnoc/qmk_firmware.git
+
+1. 必要サブモジュールを用意
+
+		make git-submodule
+
+
+### BlackPillペンダントへのファームウェア書き込み
+
+1. ファームウェアをビルドする
+
+    ```
+    make genesis2_5/rev2:default
+    ```
+
+1. dfu-utilを使って書きこむ
+
+	  リセットスイッチを押して青色LEDの点滅がゆっくりになったら以下のコマンドを実行
+
+    ```
+    dfu-util -d 1eaf:0003 -a 2 -D <firmware.bin>
+    ```
