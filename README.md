@@ -72,6 +72,7 @@
 
 ## moduloペンダントの用意
 現時点ではBiacco42さんの[modulo blackpill pendant](https://github.com/Biacco42/modulo-ergo42#modulo-black-pill-pendant-beta)に対応しています。
+Blackpill Pendantを使う場合、事前にブートローダを書き込む必要があります。書き込む方法としてはstlinkやcmsis-dapなどの書き込み機を使う方法、FT232などのUSB-UART変換器を使う方法があります。
 
 ## ファームウェア書き込み
 
