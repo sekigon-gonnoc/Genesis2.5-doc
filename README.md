@@ -1,4 +1,8 @@
 # Genesis2.5ビルドガイド	
+
+![image](https://user-images.githubusercontent.com/43873124/118263838-c038d480-b4f1-11eb-9a30-599b90d152c9.JPG)
+
+
 質問は[discord](https://discordapp.com/invite/zXCss8T) または作者Twitter(@_gonnoc)まで
 
 ## 購入が必要な部品
